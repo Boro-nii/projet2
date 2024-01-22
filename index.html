@@ -24,19 +24,29 @@
             </nav>
         </header>
         <main>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleinne nature</p>
+            <section>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleinne nature</p>
 
-            <form class="form" method="get" action="">
-                <div class="form-bg">
-                    <span class="form-location">
-                        <i id="location" class="fa-solid fa-location-dot"></i>
-                    </span>
-                    <input type="text" name="ville" id="ville" placeholder="Marseille, France">
-                    <input class="form-submit-text" type="submit" value="Rechercher">
-                    <button class="form-submit-symbol"><i id="button" class="fa-solid fa-magnifying-glass"></i></button>
+                <form class="form" id="form" method="get" action="">
+                    <div class="form-bg">
+                        <span class="form-location">
+                            <i id="location" class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <input type="text" name="ville" id="ville" placeholder="Marseille, France">
+                        <input class="form-submit-text" type="submit" value="Rechercher">
+                        <button type ="submit" form="form" class="form-submit-symbol"><i id="button" class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <div id="filter">
+                    <strong>Filtres</strong>
+                    <div class="filter-elem">   <i class="fa-solid fa-money-bill-1-wave"></i>  <span class="filter-desc">Economique</span></div>
+                    <div class="filter-elem">   <i class="fa-solid fa-child-reaching"></i>     <span class="filter-desc">Familial</span></div>
+                    <div class="filter-elem">   <i class="fa-solid fa-heart"></i>              <span class="filter-desc">Romantique</span></div>
+                    <div class="filter-elem">   <i class="fa-solid fa-dog"></i>                <span class="filter-desc">Animaux autorisés</span></div>
                 </div>
-            </form>
+
+            </section>
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
