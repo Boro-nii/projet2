@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .main-container {
@@ -55,7 +56,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -121,7 +122,88 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Header ***********/
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.top-button{
+    display: block;
+    padding: 20px 0 0 0;
+    text-align: center;
+    border-top: solid 2px rgb(0,101,252,0) ;
+}
+
+.top-button:hover{
+    color: #0065FC ;
+    border-top: solid 2px #0065FC ;
+}
+
+/****** Main ***********/
+
+/****** Formulaire ***********/
+
+.form{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-bg{
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.form-bg input[type="text"]{
+    margin: 2px 0;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+}
+
+.form-location{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.form-submit-text{
+    border-radius: 0 15px 15px 0;
+    color: #FFFFFF ;
+    background-color : #0065FC;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+}
+
+#location{
+    color:black;
+}
+
+.form-submit-symbol{
+    border-radius: 0 15px 15px 0;
+    color: #FFFFFF ;
+    background-color : #0065FC;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    display:none;
+}
+
+#button{
+    color: #FFFFFF;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -164,4 +246,11 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .form-submit-text{
+        display: none;
+    }
+
+    .form-submit-symbol{
+        display: block;
+    }
 }
