@@ -448,11 +448,11 @@ footer li{
     }
 
     .top-button{
-        font-size: 1.5em;
+        font-size: 1.4em;
         font-weight: 500;
         width: 50%;
         padding: 0;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         border-bottom: solid 2px #F2F2F2;
     }
 
