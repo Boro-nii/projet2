@@ -1,4 +1,5 @@
 /****** General ***********/
+/* CODE FOURNI */
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -123,8 +124,10 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/*FIN CODE FOURNI*/
 
-/****** Header ***********/
+
+/****** HEADER ***********/
 
 header{
     display: flex;
@@ -143,19 +146,21 @@ nav{
     gap: 25px;
 }
 
+/* les boutons ont deja une bordure transparente pour eviter de décaler les elements au survol */
 .top-button{
     display: block;
     padding: 20px 0 0 0;
     text-align: center;
     border-top: solid 2px rgb(0,101,252,0) ;
 }
-
+/* pseudo-classe :hover;
+au survol, la bordure passe de transparente a bleu */
 .top-button:hover{
     color: #0065FC ;
     border-top: solid 2px #0065FC ;
 }
 
-/****** Main ***********/
+/****** MAIN ***********/
 
 body{
     margin: 0;
@@ -187,6 +192,7 @@ body{
     padding: 1em 0 ;
 }
 
+/*le champ text du formulaire*/
 .form-box input[type="text"]{
     width: 50%;
     border: 0px;
@@ -204,7 +210,7 @@ body{
     font-weight: 700;
     color: #FFFFFF;
 }
-
+/* on cache le symbole sur la version desktop et tablette */
 #form-submit-symbol{
     display: none;
     color: #FFFFFF;
@@ -338,7 +344,6 @@ body{
     border-radius: 20px;
     background-color: #FFFFFF;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    /* border: solid black 1px; */
 }
 
 .activity-card img{
@@ -496,7 +501,7 @@ footer menu{
         width: 100%;
         gap: 0;
     }
-
+/* la propriété flex-grow permet d'occuper toute la place disponible */
     .form-box input[type="text"]{
         flex-grow: 1;
         margin-right: 40px;
@@ -605,7 +610,7 @@ footer menu{
         gap: 15px;
     }
 
-    footer > menu{
+    .menuFooter{
         width: 100%;
         padding: 0;
         display: flex;

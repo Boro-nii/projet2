@@ -13,7 +13,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <div class="main-container">
         <header>
@@ -32,7 +31,7 @@
                 <form method="get" action="#">
                     <div class="form-box">
                         <i id="location-dot" class="fa-solid fa-location-dot"></i>
-                        <input type="text" name="ville" placeholder="Marseille, France" value="Marseille, France">
+                        <input type="text" name="ville" value="Marseille, France" placeholder="Marseille, France">
                         <button>
                             <span class="form-submit-text">Rechercher</span>
                             <i id="form-submit-symbol" class="fa-solid fa-magnifying-glass"></i>
@@ -41,9 +40,9 @@
                 </form>
                 <div id="filter">
                     <div class="filter-text">
-                        <strong>Filtres</strong>
+                        <h3>Filtres</h3>
                     </div>
-                    <menu class="filter-elem-box">
+                    <div class="filter-elem-box">
                         <button class="filter-elem">   
                             <i class="fa-solid fa-money-bill-1-wave"></i>  
                             <span class="filter-desc">Economique</span>          
@@ -60,7 +59,7 @@
                             <i class="fa-solid fa-fire"></i>               
                             <span class="filter-desc">Nos pépites</span>         
                         </button>
-                    </menu>
+                    </div>
                 </div>
                 <div class="form-info">
                     <div class="form-info-icon">
@@ -69,9 +68,9 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-
             <div class="hebergements-and-populaires">
-                <section class="hebergements" id="hebergements">
+                <!-- l'id hebergement permet de récupéré la priorité CSS pour changer le background-color du format mobile -->
+                <section class="hebergements" id="hebergements"> 
                     <h2>Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#" class="hebergements-article">
@@ -87,7 +86,8 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <!-- <span class="sr-only">Note de 4 sur 5</span> -->
+                                    <!-- la class "sr-only" n'est lu que par les screen-reader -->
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </article>
                         </a>
@@ -104,7 +104,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <!-- <span class="sr-only">Note de 4 sur 5</span> -->
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </article>
                         </a>                        
@@ -121,7 +121,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <!-- <span class="sr-only">Note de 4 sur 5</span> -->
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </article>
                         </a>                        
@@ -138,7 +138,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <!-- <span class="sr-only">Note de 4 sur 5</span> -->
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </article>
                         </a>                        
@@ -155,7 +155,7 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <!-- <span class="sr-only">Note de 4 sur 5</span> -->
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </article>
                         </a>                        
@@ -172,14 +172,13 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <!-- <span class="sr-only">Note de 4 sur 5</span> -->
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </article>
                         </a>
                     </div>
                     <a id="afficherPlus" href="#">Afficher plus</a>
                 </section>
-
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -246,7 +245,6 @@
                     </div>
                 </section>
             </div>
-
             <section class="activity">
                 <h2>Activités à Marseille</h2>
                 <div class="activity-box">
@@ -279,7 +277,7 @@
             </section>
         </main>
         <footer>
-            <menu>
+            <menu class="menuFooter">
                 <li class="pFooter">A propos</li>
                 
                     <li><a href="#">Fonctionnement du site</a></li>
@@ -287,14 +285,14 @@
                     <li><a href="#">Données et confidentialité</a></li>
                 
             </menu>
-            <menu>
+            <menu class="menuFooter">
                 <li class="pFooter">Nos Hébergements</li>
                 
                     <li><a href="#">Charte qualité</a></li>
                     <li><a href="#">Proposer votre hôtel</a></li>
                 
             </menu>
-            <menu>
+            <menu class="menuFooter">
                 <li class="pFooter">Assistance</li>
                 
                     <li><a href="#">Centre d'aide</a></li>
@@ -305,5 +303,4 @@
         </footer>
     </div>
 </body>
-
 </html>
