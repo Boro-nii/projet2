@@ -126,6 +126,9 @@ a {
 }
 /*FIN CODE FOURNI*/
 
+button{
+    cursor: pointer;
+}
 
 /****** HEADER ***********/
 
@@ -139,11 +142,14 @@ header{
     padding: 30px 30px 30px 0;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
+.ulNav{
+    margin: 0;
+    padding: 0;
     flex-wrap: wrap;
     gap: 25px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
 /* les boutons ont deja une bordure transparente pour eviter de décaler les elements au survol */
@@ -283,9 +289,9 @@ body{
 }
 
 .hebergements-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hebergements-article{
@@ -293,6 +299,8 @@ body{
     border-radius: 25px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 30%;
+    margin-bottom: 30px;
 }
 
 .hebergements-article img{
@@ -320,7 +328,6 @@ body{
     font-weight: bold;
     font-size: 1.1em;
     display: inline-block;
-    margin-top: 30px;
 }
 
 /* activités */
@@ -335,15 +342,15 @@ body{
 }
 
 .activity-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .activity-card{
     border-radius: 20px;
     background-color: #FFFFFF;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 22%;
 }
 
 .activity-card img{
@@ -465,13 +472,20 @@ footer menu{
     nav{
         width: 100%;
         flex-wrap: nowrap;
+    }
+
+    .ulNav{
         gap: 0;
     }
 
-    .top-button{
-        font-size: 1.4em;
-        font-weight: 500;
+    .liNav{
         width: 50%;
+    }
+
+    .top-button{
+        font-size: 1.3em;
+        font-weight: 500;
+        /* width: 50%; */
         padding: 0;
         padding-bottom: 10px;
         border-bottom: solid 2px #F2F2F2;
@@ -531,13 +545,6 @@ footer menu{
         gap: 1em;
     }
 
-    .filter-elem-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
-        width: 100%;
-    }
-
     .filter-elem{
         margin: 0;
         height: 3em;
@@ -587,7 +594,10 @@ footer menu{
 
     .hebergements-cards{
         display: flex;
-        flex-direction: column;
+    }
+
+    .hebergements-article{
+        width: 100%;
     }
 
     /* activités */
@@ -599,6 +609,11 @@ footer menu{
     .activity-box{
         display: flex;
         flex-direction: column;
+    }
+
+    .activity-card{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     /* footer */
