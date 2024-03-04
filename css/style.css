@@ -556,10 +556,22 @@ footer menu{
         padding: 0;
         padding-left: 10px;
         line-height: 1em;
+        /* ajout */
+        width: 48%;
+        margin-bottom: 20px;
+        height: 50px;
     }
 
     .filter-elem > i {
         font-size: 1.5em;
+    }
+
+    .filter-elem-box{
+        /* ajout */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     /* hebergement et populaire */
@@ -630,6 +642,5 @@ footer menu{
         padding: 0;
         display: flex;
         flex-direction: column;
-
     }
 }
